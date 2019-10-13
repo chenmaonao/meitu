@@ -1,0 +1,149 @@
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p{
+	margin: 0;
+}
+
+@media screen and (min-width:768px){
+
+	.nav-pc{
+		display: block;
+	}
+	.nav-phone{
+		display: none;
+	}
+
+}
+@media screen and (max-width:767px) {
+	.nav-pc{
+		display: none;
+	}
+	.nav-phone{
+		display: block;
+	}
+}
+
+
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.nav{
+	position: absolute; 
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.nav .nav-pc{
+	height: 44px;
+	width: 100%;
+	background-color: #000000;
+}
+.nav-pc .icon{
+	width: 122px;
+	height: 100%;
+	background: url(../img/meitux.png) -5px 7px;
+	background-size: 400px 400px;
+	
+}
+.nav-pc .tag{
+	display: flex;
+	height: 100%;
+}
+.nav-pc .tag li{
+	height: 100%;
+	float: left;
+	color: #FFFFFF;
+	line-height: 44px;
+	flex: 1;
+}
+.nav-pc .tag li span{
+	/* display: inline-block; */
+	text-align: center;
+	display: block;
+	/* width: 80px; */
+}
+.nav-pc .search-icon div{
+	width: 20px;
+	height: 100%;
+	background: url(../img/meitux.png) -210px 10px;
+	background-size: 400px 400px;
+}
+.nav-pc .head-icon div{
+	width: 20px;
+	height: 100%;
+	background: url(../img/meitux.png) -165px 8px;
+	background-size: 400px 400px;
+}
+
+.nav .nav-phone{
+	height: 48px;
+	width: 100%;
+	background-color: #000000;
+}
+.nav-phone .icon{
+	width: 120px;
+	height: 48px;
+	background: url(../img/meitux.png) 0px 10px;
+	background-size: 400px 400px;
+	position: absolute;
+	margin-left:-60px;
+	left: 50%;
+}
+.nav-phone .head-icon{
+	padding: 0 16px;
+	float: right;
+	width: 20px;
+	height: 100%;
+	background: url(../img/meitux.png) -165px 8px;
+	background-size: 400px 400px;
+}
+.nav-phone .tag{
+	float: left;
+	width: 48px;
+	height: 100%;
+}
+.nav-phone .tag span{
+	display:block;
+	width: 18px;
+	height: 2px;
+	background-color: #FFFFFF;
+	margin-bottom: 6px;
+}
+.nav-phone .tag div{
+	width: 18px;
+	height: 18px;
+	margin: 15px auto;
+}
+.carousel-meitu{
+	margin-top: 44px;
+	
+}
+.carousel-inner{
+	
+	height: 620px;
+}
+.carousel-item{
+	height: 100%;
+	
+}
+.thediv{
+	padding: 2px;
+	padding-left: 0px;
+}
+.test-box{
+	overflow: hidden;
+	width: 100%;
+}
+.container-fluid{
+	/* width: 100.3%; */
+	width: calc(100% + 2px);
+}
+.btn-line{
+	border-bottom: 1px solid #ddd;
+}
